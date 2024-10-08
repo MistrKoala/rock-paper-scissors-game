@@ -1,0 +1,99 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background & Layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+/* Typography */
+h1 {
+    font-size: 3em;
+    color: #3A3A3A;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.result-area {
+    margin-top: 30px;
+}
+
+.user-choice, .ai-choice, .result-message {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.result-message {
+    font-weight: bold;
+    font-size: 2em;
+    color: #ff7675;
+}
+
+/* Choices (Buttons) */
+.choices {
+    margin: 20px 0;
+}
+
+.choice-btn {
+    border: none;
+    background: #74ebd5;
+    font-size: 80px;
+    margin: 10px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.choice-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.choice-btn:active {
+    transform: scale(0.95);
+}
+
+/* Result Flash Animation */
+@keyframes result-flash {
+    0% {color: #ff7675;}
+    50% {color: #2ecc71;}
+    100% {color: #ff7675;}
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .choice-btn {
+        font-size: 60px;
+    }
+}

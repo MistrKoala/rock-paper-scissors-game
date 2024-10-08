@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <p class="subheading">Can you beat the AI?</p>
+        
+        <div class="choices">
+            <button class="choice-btn" data-choice="rock">✊</button>
+            <button class="choice-btn" data-choice="paper">✋</button>
+            <button class="choice-btn" data-choice="scissors">✌️</button>
+        </div>
+
+        <div class="result-area">
+            <div class="user-choice">You chose: <span id="user-choice-text">-</span></div>
+            <div class="ai-choice">AI chose: <span id="ai-choice-text">-</span></div>
+            <div class="result-message">Result: <span id="result-text">-</span></div>
+        </div>
+    </div>
+
+    <script src="Handle.js"></script>
+</body>
+</html>
